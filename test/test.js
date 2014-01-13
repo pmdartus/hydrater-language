@@ -13,9 +13,10 @@ describe('Test HYDRATER results', function() {
       }
     };
 
-    hydrater(document, function(err, document) {
+    hydrater(null, document, function(err, document) {
       document.should.have.property('metadatas');
-      document.metadatas.should.have.property('language').and.contains('french');
+      console.log(document.metadatas);
+      document.metadatas.should.have.property('languages').and.contains('french');
       done();
     });
   });
