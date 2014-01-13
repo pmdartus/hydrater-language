@@ -15,8 +15,7 @@ describe('Test HYDRATER results', function() {
 
     hydrater(null, document, function(err, document) {
       document.should.have.property('metadatas');
-      console.log(document.metadatas);
-      document.metadatas.should.have.property('languages').and.contains('french');
+      document.metadatas.should.have.property('language').and.eql('french');
       done();
     });
   });
