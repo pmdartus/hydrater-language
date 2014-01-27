@@ -24,7 +24,8 @@
   "dependencies": {
     "async": "0.2.x",
     "cluestr-file-hydrater": "x.x.x",
-    "languagedetect": "1.1.x"
+    "languagedetect": "1.1.x",
+    "node-fs": "x.x.x"
   },
   "devDependencies": {
     "mocha": "1.15.x",
