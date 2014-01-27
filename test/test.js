@@ -179,6 +179,54 @@ describe('Test HYDRATER results', function() {
     });  
   });
 
+  it('returns the correct informations', function(done) {    
+    var fs = require('fs');
+    fs.readFile('./test/testFiles/test8.txt', 'utf8', function (err,data) {
+      var start = +new Date();  // log start timestamp
+      if (err) {
+        return console.log(err);
+      }
+      var document = {
+        datas: {
+            text: data
+          } 
+      };
+     
+      hydrater(null, document, function(err, document) {
+        document.should.have.property('metadatas');
+        document.metadatas.should.have.property('language').and.eql('english');
+        done();
+      });
+      var end =  +new Date();  // log end timestamp
+      var diff = end - start;
+      console.log(diff);
+    });  
+  });
+
+  it('returns the correct informations', function(done) {    
+    var fs = require('fs');
+    fs.readFile('./test/testFiles/test9.txt', 'utf8', function (err,data) {
+      var start = +new Date();  // log start timestamp
+      if (err) {
+        return console.log(err);
+      }
+      var document = {
+        datas: {
+            text: data
+          } 
+      };
+     
+      hydrater(null, document, function(err, document) {
+        document.should.have.property('metadatas');
+        document.metadatas.should.have.property('language').and.eql('spanish');
+        done();
+      });
+      var end =  +new Date();  // log end timestamp
+      var diff = end - start;
+      console.log(diff);
+    });  
+  });
+
 
   it('returns the correct informations', function(done) {
     var start = +new Date();  // log start timestamp
