@@ -9,7 +9,7 @@ describe('Test HYDRATER results', function() {
 
   
   it('returns the correct informations', function(done) {
-    
+    console.log("test1");
     
     var fs = require('fs');
     fs.readFile('./test/testFiles/test1.txt', 'utf8', function (err,data) {
@@ -34,7 +34,8 @@ describe('Test HYDRATER results', function() {
     });  
   });
 
-  it('returns the correct informations', function(done) {    
+  it('returns the correct informations', function(done) {  
+    console.log("test2");  
     var fs = require('fs');
     fs.readFile('./test/testFiles/test2.txt', 'utf8', function (err,data) {
       var start = +new Date();  // log start timestamp
@@ -58,7 +59,8 @@ describe('Test HYDRATER results', function() {
     });  
   });
   
-  it('returns the correct informations', function(done) {    
+  it('returns the correct informations', function(done) { 
+    console.log("test3");   
     var fs = require('fs');
     fs.readFile('./test/testFiles/test3.txt', 'utf8', function (err,data) {
       var start = +new Date();  // log start timestamp
@@ -82,7 +84,8 @@ describe('Test HYDRATER results', function() {
     });  
   });
 
-  it('returns the correct informations', function(done) {    
+  it('returns the correct informations', function(done) { 
+    console.log("test4");   
     var fs = require('fs');
     fs.readFile('./test/testFiles/test4.txt', 'utf8', function (err,data) {
       var start = +new Date();  // log start timestamp
@@ -108,6 +111,7 @@ describe('Test HYDRATER results', function() {
 
 
   it('returns the correct informations', function(done) {    
+    console.log("test5");
     var fs = require('fs');
     fs.readFile('./test/testFiles/test5.txt', 'utf8', function (err,data) {
       var start = +new Date();  // log start timestamp
@@ -131,7 +135,8 @@ describe('Test HYDRATER results', function() {
     });  
   });
 
-  it('returns the correct informations', function(done) {    
+  it('returns the correct informations', function(done) { 
+  console.log("test6");   
     var fs = require('fs');
     fs.readFile('./test/testFiles/test6.txt', 'utf8', function (err,data) {
       var start = +new Date();  // log start timestamp
@@ -155,7 +160,8 @@ describe('Test HYDRATER results', function() {
     });  
   });
 
-  it('returns the correct informations', function(done) {    
+  it('returns the correct informations', function(done) { 
+    console.log("test7");   
     var fs = require('fs');
     fs.readFile('./test/testFiles/test7.txt', 'utf8', function (err,data) {
       var start = +new Date();  // log start timestamp
@@ -179,7 +185,8 @@ describe('Test HYDRATER results', function() {
     });  
   });
 
-  it('returns the correct informations', function(done) {    
+  it('returns the correct informations', function(done) {
+    console.log("test8");    
     var fs = require('fs');
     fs.readFile('./test/testFiles/test8.txt', 'utf8', function (err,data) {
       var start = +new Date();  // log start timestamp
@@ -203,7 +210,8 @@ describe('Test HYDRATER results', function() {
     });  
   });
 
-  it('returns the correct informations', function(done) {    
+  it('returns the correct informations', function(done) {
+    console.log("test9");    
     var fs = require('fs');
     fs.readFile('./test/testFiles/test9.txt', 'utf8', function (err,data) {
       var start = +new Date();  // log start timestamp
